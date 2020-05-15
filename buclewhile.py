@@ -72,3 +72,16 @@ while a <= 10:
         b = b + 1
     print("")
     a = a + 1
+
+
+#ejemplo de raiz cuadrada
+
+objetivo = 4
+respuesta = 0 
+
+while respuesta ** 2 < objetivo:
+    respuesta += 1
+if respuesta ** 2 == objetivo:
+    print(f'La raiz cuadrada de {objetivo} es {respuesta}')
+else:
+    print(f'{objetivo} no tiene una raiz cuadrada exacta')

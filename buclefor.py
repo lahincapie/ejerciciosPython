@@ -39,3 +39,22 @@ print("")
 
 for dato, valor in datos.items():
     print("{} : {}".format(dato, valor))
+
+# si un objeto es iterable significa que puede pasar como argumento de la funcion
+# iter()
+
+iter('cadena') # cadena
+iter(['a', 'b', 'c']) # lista
+iter(('a', 'b', 'c')) # tupla
+iter({'a', 'b', 'c'}) # conjunto
+iter({'a': 1, 'b': 2, 'c': 3}) # diccionario
+
+# Todas las llamadas anteriores regresan un objeto de tipo iterator.
+# Para que nos muestre los elementos sucesivamente se usa next()
+
+frutas = ['manzana', 'pera', 'mango']
+iterador = iter(frutas)
+next(iterador)
+next(iterador)
+next(iterador)
+

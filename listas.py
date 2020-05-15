@@ -102,3 +102,14 @@ print(lista[::5]) # imprime toda la lista de 5 en 5
 print("")
 
 
+mi_lista = list(range(101))
+print(mi_lista)
+print("")
+doble = [i * 2 for i in mi_lista]
+print(doble)
+print("")
+pares = [i for i in mi_lista if i % 2 == 0]
+print(pares)
+print("")
+nones = [i for i in mi_lista if i % 2 != 0]
+print(nones)
